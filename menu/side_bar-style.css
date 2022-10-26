@@ -18,6 +18,10 @@ html{
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
+    transition: filter .4s;
+}
+.icon:hover{
+    filter:opacity(.5)
 }
 .side-bar{
     width: 320px;
