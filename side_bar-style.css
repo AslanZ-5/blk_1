@@ -41,12 +41,12 @@ html{
 .side-bar__icon1{
     margin-top:23px;
     margin-left:24px;
-    background-image:url(/img/burgerx.svg) ;
+    background-image:url(img/burgerx.svg) ;
 }
 .side-bar__icon2{
     margin-top:23px;
     margin-right: 24px;
-    background-image: url(/img/search.svg);
+    background-image: url(img/search.svg);
 }
 .side-bar__block{
     width:222px;
@@ -94,15 +94,15 @@ html{
     display: flex;
 }
 .call-icon{
-    background-image: url(/img/call.svg);
+    background-image: url(img/call.svg);
     margin-right: 16px;
 }
 .chat-icon{
-    background-image: url(/img/chat.svg);
+    background-image: url(img/chat.svg);
     margin-right: 16px;
 }
 .profile-icon{
-    background-image: url(/img/profile.svg);
+    background-image: url(img/profile.svg);
 }
 .side-bar__info{
     margin-top:16px;
