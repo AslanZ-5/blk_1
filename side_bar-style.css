@@ -131,3 +131,8 @@ html{
 .side-bar__lang:last-child{
     padding-right:0;
 }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
