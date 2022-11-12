@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scrol_style.css">
+   
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
+<link rel="stylesheet" href="scrol_style.css">
     <title>Document</title>
+    
 </head>
 <body>
     <section class="cat">
@@ -18,61 +20,103 @@
                 Ремонт техники различных брендов
             </h4>
         </div>
-        <div class="cat__block">
-            <div class="cat__item">
+        <div class="swiper" style="position:static; margin:0; overflow:visible;">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            
+              <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/lenovo3.svg" alt="lenovo logo">
                 <div class="cat__icon"></div>
             </div>
-            <div class="cat__item">
+            <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/samsung.svg" alt="samsung logo">
                 <div class="cat__icon"></div>
             </div>
-            <div class="cat__item">
+            <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/apple.svg" alt="apple logo">
                 <div class="cat__icon"></div>
             </div>
-            <div class="cat__item">
+            <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/sonic.svg" alt="view sonic logo">
                 <div class="cat__icon"></div>
             </div>
-            <div class="cat__item">
+            <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/bosh.svg" alt="bosh logo">
                 <div class="cat__icon"></div>
             </div>
-            <div class="cat__item">
+            <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/hp.svg" alt="hp logo">
                 <div class="cat__icon"></div>
             </div>
-            <div class="cat__item">
+            <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/acer.svg" alt="acer logo">
                 <div class="cat__icon"></div>
             </div>
-            <div class="cat__item">
+            <div class="cat__item swiper-slide">
                 <img class="cat__img" src="img/sony.svg" alt="sony logo">
                 <div class="cat__icon"></div>
             </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+    
+          </div>
+          <div class="cat__block">
+            <div class="cat__items">
+                 
+              <div class="cat__item swiper-slide">
+                <img class="cat__img" src="img/lenovo3.svg" alt="lenovo logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide">
+                <img class="cat__img" src="img/samsung.svg" alt="samsung logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide">
+                <img class="cat__img" src="img/apple.svg" alt="apple logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide">
+                <img class="cat__img" src="img/sonic.svg" alt="view sonic logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide">
+                <img class="cat__img" src="img/bosh.svg" alt="bosh logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide">
+                <img class="cat__img" src="img/hp.svg" alt="hp logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide target hide">
+                <img class="cat__img" src="img/acer.svg" alt="acer logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide target hide">
+                <img class="cat__img" src="img/sony.svg" alt="sony logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide target hide">
+                <img class="cat__img" src="img/lenovo3.svg" alt="lenovo logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide target hide">
+                <img class="cat__img" src="img/samsung.svg" alt="samsung logo">
+                <div class="cat__icon"></div>
+            </div>
+            <div class="cat__item swiper-slide target hide">
+                <img class="cat__img" src="img/apple.svg" alt="apple logo">
+                <div class="cat__icon"></div>
+            </div>
+            </div>
+          <div class="show_all_w"><img class="show_img"src="img/show.svg" alt=""> <button  class="show_all">Показать все</button> </div>
         </div>
     </section>
+
+    
+      
+
     <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 

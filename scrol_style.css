@@ -8,7 +8,12 @@
     outline: none;
     font-family: "TTLakes", sans-serif
 }
-
+body{
+    background-color: #f2f2f2;
+}
+.cat{
+    overflow: hidden;
+}
 .cat__header{
     background-image: linear-gradient(to right,#f8f8f8, #fff);
 }
@@ -22,13 +27,12 @@
 
 }
 .cat__block{
-    overflow: auto;
-    display:flex;
-    white-space: nowrap;
+    display: none;
 }
+
 .cat__item{
- min-width:224px;
- height: 72px;
+width: 224px;
+height: 72px;
  margin:10px;
  padding: 0 16px;
  display: flex; 
@@ -49,4 +53,103 @@
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 20px;
+}
+
+
+.swiper {
+    width: 242px;
+    height: 72px;
+    position:relative;
+    
+  }
+.swiper::after{
+    content:"";
+    width:24px;
+    height: 70px;
+   
+    background: linear-gradient(
+        to right,
+        rgba(248, 248, 248,0.2),
+        rgba(248, 248, 248,0.5),
+        rgba(248, 248, 248,0.8),
+        rgba(248, 248, 248,0.95),
+        rgba(248, 248, 248,0.99)
+        );
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top:87px;
+}
+.swiper-slide{
+    background-color: #fff;
+}
+
+.swiper .swiper-pagination{
+    top:160px    
+}
+
+.swiper-pagination-bullet{
+    width:12px;
+    height: 12px;
+    background-color: #DDDDDD;
+} 
+
+.swiper-pagination-bullet-active{
+    background-color: #B5B6BC;
+}
+
+@media (min-width:768px) {
+    .cat__heading{
+        padding:24px;
+    }
+    .swiper{
+        display: none;
+    }
+  
+    .hide{
+        display: none;
+    }
+    .cat__block{
+        display: block;
+        padding-left:13px;
+        padding-right:7px;
+    }
+    .cat__items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .show_all_w{
+        padding-left:21px;
+
+    }
+    .show_all{
+        border:none;
+        font-weight: 500;
+        color: #1B1C21;
+        padding-left:16px;
+    }
+    
+}
+
+@media (min-width:1120px) {
+    .cat__items{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    .cat__item:nth-child(7){
+        display: flex;
+    }
+    .cat__item:nth-child(8){
+        display: flex;
+    }
+    .cat__block{
+        display: block;
+        padding-left:21px;
+        padding-right:15px;
+    }
+    .cat__item{
+        width:240px;
+    }
+    
 }
