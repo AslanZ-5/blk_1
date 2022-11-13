@@ -66,10 +66,9 @@ height: 72px;
     content:"";
     width:24px;
     height: 70px;
-   
     background: linear-gradient(
         to right,
-        rgba(248, 248, 248,0.2),
+        rgba(248, 248, 248, 0.2),
         rgba(248, 248, 248,0.5),
         rgba(248, 248, 248,0.8),
         rgba(248, 248, 248,0.95),
@@ -96,6 +95,11 @@ height: 72px;
 
 .swiper-pagination-bullet-active{
     background-color: #B5B6BC;
+}
+@media (min-width:381px){
+    .swiper::after{
+        top:65px;
+    }
 }
 
 @media (min-width:768px) {
