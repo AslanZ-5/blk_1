@@ -125,13 +125,13 @@ height: 72px;
     
     .show_all_w{
         padding-left:21px;
-
     }
     .show_all{
         border:none;
         font-weight: 500;
         color: #1B1C21;
         padding-left:16px;
+        background-color: transparent;
     }
     
 }
