@@ -1,5 +1,5 @@
-const showAllBtn = document.querySelector('.show_all')
-const showImg = document.querySelector('.show_img')
+const showAllBtn = document.querySelector('.show_all');
+const showImg = document.querySelector('.show_img');
 
 
 const swiper = new Swiper('.swiper', {
@@ -14,17 +14,17 @@ const swiper = new Swiper('.swiper', {
 
 showAllBtn.addEventListener('click', () => {
     document.querySelectorAll('.target').forEach((item)=>{
-        item.classList.toggle('hide')
+        item.classList.toggle('hide');
         
     });
     if (!document.querySelectorAll('.target')[0].classList.contains('hide')){
-        showAllBtn.innerHTML = 'Скрыть'
-        showImg.style.transform = 'rotate(180deg)'
+        showAllBtn.innerHTML = 'Скрыть';
+        showImg.style.transform = 'rotate(180deg)';
 
     }
     else{
-        showAllBtn.innerHTML = 'Показать все'
-        showImg.style.transform = 'rotate(0deg)'
+        showAllBtn.innerHTML = 'Показать все';
+        showImg.style.transform = 'rotate(0deg)';
     }
     
-})
+});
