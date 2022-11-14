@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
   });
 
 showAllBtn.addEventListener('click', () => {
-    document.querySelectorAll('.target').forEach((item)=>{
+    document.querySelectorAll('.target').forEach((item) => {
         item.classList.toggle('hide');
         
     });
